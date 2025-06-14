@@ -5,6 +5,10 @@
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+    images: {
+        domains: ["encrypted-tbn0.gstatic.com","i.pinimg.com" ],
+    },
+};
 
 export default config;

@@ -1,6 +1,57 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+
 @theme {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+/* Glass Card Utility */
+.glass-card {
+  @apply bg-white/15 backdrop-blur-md border border-white/30 rounded-2xl shadow-[0_8px_32px_rgba(31,38,135,0.1)];
+}
+
+/* Buttons */
+.btn-primary {
+  @apply bg-gradient-to-r from-[#00D38A] to-[#3F8EFC] text-white px-8 py-3 rounded-full font-medium hover:scale-105 transition;
+}
+.btn-secondary {
+  @apply bg-white/10 border border-white/30 text-white px-8 py-3 rounded-full font-medium hover:scale-105 transition;
+}
+
+/* Floating Blob Animations */
+@keyframes slowDrift {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(20px,20px) scale(1.05); }
+}
+@keyframes slowDriftAlt {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(-15px,-10px) scale(1.03); }
+}
+.animate-slowDrift {
+  animation: slowDrift 12s ease-in-out infinite;
+}
+.animate-slowDriftAlt {
+  animation: slowDriftAlt 14s ease-in-out infinite;
+}
+
+
+
+/* Glass effect shadow */
+.shadow-glass {
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+}
+
+
+
+
+
+/* Backdrop-filter support */
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
