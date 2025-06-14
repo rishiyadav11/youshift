@@ -13,13 +13,9 @@ export const metadata: Metadata = {
     "YouShift",
     "hospital scheduling",
     "shift management",
-    "React",
-    "React Native",
-    "tRPC",
-    "Drizzle ORM",
+    "healthcare SaaS",
     "Founding Engineer project",
     "YouShift clone",
-    "healthcare SaaS",
   ],
   icons: [{ rel: "icon", url: "/favicon.ico" }],
   openGraph: {
@@ -30,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "YouShift Reimagined",
     images: [
       {
-        url: "https://yourdomain.com/og-image.png", // replace with actual og image
+        url: "https://youshift.vercel.app/favicon.ico", // replace with actual og image
         width: 1200,
         height: 630,
         alt: "YouShift Reimagined - Hospital Scheduling SaaS",
@@ -45,7 +41,7 @@ export const metadata: Metadata = {
     description:
       "Smarter hospital scheduling inspired by YouShift. Built with modern full-stack tools.",
     creator: "@yourhandle", // replace with your Twitter handle
-    images: ["https://yourdomain.com/og-image.png"],
+    images: ["https://youshift.vercel.app/favicon.ico"],
   },
 };
 
